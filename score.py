@@ -19,5 +19,13 @@ for s in scores:
     if int(s) < 60:
         fail_count += 1
 
-# 輸出結果
+
+num_scores = [int(s) for s in scores]
+
+# 輸出不及格數量
 print(fail_count)
+
+# 輸出最大值與最小值
+if num_scores:
+    print(max(num_scores))
+    print(min(num_scores))
