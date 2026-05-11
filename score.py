@@ -16,5 +16,18 @@ scores = [int(s) for s in scores]
 # 計算平均數
 average = sum(scores) / len(scores)
 
+# 計算不及格數量
+fail_count = 0
+for s in scores:
+    if s < 60:
+        fail_count += 1
+
 # 輸出平均數
 print(average)
+
+# 輸出不及格數量
+print(fail_count)
+
+# 輸出最大值與最小值
+print(max(scores))
+print(min(scores))
